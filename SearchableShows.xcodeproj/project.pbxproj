@@ -34,6 +34,8 @@
 		EE41C2CC2B9F595000E6D32E /* ListSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2CB2B9F594F00E6D32E /* ListSectionViewController.swift */; };
 		EE41C2CE2B9F596D00E6D32E /* ListSectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2CD2B9F596D00E6D32E /* ListSectionRouter.swift */; };
 		EE41C2D12B9F59A600E6D32E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2D02B9F59A600E6D32E /* UIColor.swift */; };
+		EE41C2D42B9F59E900E6D32E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2D32B9F59E900E6D32E /* ContentViewModel.swift */; };
+		EE41C2D62B9F5A1100E6D32E /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2D52B9F5A1100E6D32E /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		EE41C2CB2B9F594F00E6D32E /* ListSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionViewController.swift; sourceTree = "<group>"; };
 		EE41C2CD2B9F596D00E6D32E /* ListSectionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionRouter.swift; sourceTree = "<group>"; };
 		EE41C2D02B9F59A600E6D32E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		EE41C2D32B9F59E900E6D32E /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EE41C2D52B9F5A1100E6D32E /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,11 +139,11 @@
 		EE41C26C2B9F543900E6D32E /* SearchableShows */ = {
 			isa = PBXGroup;
 			children = (
-				EE41C2CF2B9F598100E6D32E /* Extensions */,
-				EE41C2BD2B9F588500E6D32E /* Scenes */,
 				EE41C26D2B9F543900E6D32E /* AppDelegate.swift */,
 				EE41C26F2B9F543900E6D32E /* SceneDelegate.swift */,
 				EE41C27B2B9F543C00E6D32E /* Info.plist */,
+				EE41C2CF2B9F598100E6D32E /* Extensions */,
+				EE41C2BD2B9F588500E6D32E /* Scenes */,
 				EE41C29D2B9F568600E6D32E /* Models */,
 				EE41C2A22B9F56B800E6D32E /* Domain */,
 				EE41C2A92B9F574500E6D32E /* Repository */,
@@ -242,6 +246,7 @@
 		EE41C2BD2B9F588500E6D32E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EE41C2D22B9F59D600E6D32E /* Content */,
 				EE41C2BE2B9F589200E6D32E /* SectionList */,
 			);
 			path = Scenes;
@@ -283,6 +288,15 @@
 				EE41C2D02B9F59A600E6D32E /* UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE41C2D22B9F59D600E6D32E /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE41C2D32B9F59E900E6D32E /* ContentViewModel.swift */,
+				EE41C2D52B9F5A1100E6D32E /* ContentViewController.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,9 +441,11 @@
 				EE41C2BC2B9F583300E6D32E /* CacheManager.swift in Sources */,
 				EE41C2B02B9F578900E6D32E /* NetworkService.swift in Sources */,
 				EE41C26E2B9F543900E6D32E /* AppDelegate.swift in Sources */,
+				EE41C2D42B9F59E900E6D32E /* ContentViewModel.swift in Sources */,
 				EE41C2702B9F543900E6D32E /* SceneDelegate.swift in Sources */,
 				EE41C2B42B9F57B100E6D32E /* EndPointTarget.swift in Sources */,
 				EE41C2CE2B9F596D00E6D32E /* ListSectionRouter.swift in Sources */,
+				EE41C2D62B9F5A1100E6D32E /* ContentViewController.swift in Sources */,
 				EE41C29F2B9F569300E6D32E /* Loadable.swift in Sources */,
 				EE41C2AB2B9F575300E6D32E /* SectionRepository.swift in Sources */,
 				EE41C2B62B9F57C200E6D32E /* HTTPRequestProtocol.swift in Sources */,
