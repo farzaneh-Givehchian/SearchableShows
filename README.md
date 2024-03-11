@@ -15,8 +15,8 @@ This work assignment demonstrates a reactive MVVM architecture built on UIKit. I
 
 ## Features
 
-Search
-Offline Mode: Enables functionality even without internet connectivity.
+- Search
+- Offline Mode: Enables functionality even without internet connectivity.
 
 ## Architecture
 
