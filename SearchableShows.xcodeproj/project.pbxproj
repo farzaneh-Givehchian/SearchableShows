@@ -26,6 +26,9 @@
 		EE41C2B62B9F57C200E6D32E /* HTTPRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2B52B9F57C200E6D32E /* HTTPRequestProtocol.swift */; };
 		EE41C2B92B9F581800E6D32E /* MovieServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2B82B9F581800E6D32E /* MovieServiceEndPoint.swift */; };
 		EE41C2BC2B9F583300E6D32E /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2BB2B9F583300E6D32E /* CacheManager.swift */; };
+		EE41C2C12B9F58B300E6D32E /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2C02B9F58B300E6D32E /* ListSection.swift */; };
+		EE41C2C32B9F58CA00E6D32E /* MovieCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2C22B9F58CA00E6D32E /* MovieCollectionLayout.swift */; };
+		EE41C2C52B9F58DC00E6D32E /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41C2C42B9F58DC00E6D32E /* CollectionDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		EE41C2B52B9F57C200E6D32E /* HTTPRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestProtocol.swift; sourceTree = "<group>"; };
 		EE41C2B82B9F581800E6D32E /* MovieServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceEndPoint.swift; sourceTree = "<group>"; };
 		EE41C2BB2B9F583300E6D32E /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		EE41C2C02B9F58B300E6D32E /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
+		EE41C2C22B9F58CA00E6D32E /* MovieCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionLayout.swift; sourceTree = "<group>"; };
+		EE41C2C42B9F58DC00E6D32E /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +125,14 @@
 		EE41C26C2B9F543900E6D32E /* SearchableShows */ = {
 			isa = PBXGroup;
 			children = (
+				EE41C2BD2B9F588500E6D32E /* Scenes */,
+				EE41C26D2B9F543900E6D32E /* AppDelegate.swift */,
+				EE41C26F2B9F543900E6D32E /* SceneDelegate.swift */,
 				EE41C27B2B9F543C00E6D32E /* Info.plist */,
 				EE41C29D2B9F568600E6D32E /* Models */,
 				EE41C2A22B9F56B800E6D32E /* Domain */,
 				EE41C2A92B9F574500E6D32E /* Repository */,
 				EE41C2AC2B9F576800E6D32E /* Networking */,
-				EE41C26D2B9F543900E6D32E /* AppDelegate.swift */,
-				EE41C26F2B9F543900E6D32E /* SceneDelegate.swift */,
 				EE41C2762B9F543C00E6D32E /* Assets.xcassets */,
 				EE41C2782B9F543C00E6D32E /* LaunchScreen.storyboard */,
 			);
@@ -219,6 +226,32 @@
 				EE41C2BB2B9F583300E6D32E /* CacheManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		EE41C2BD2B9F588500E6D32E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EE41C2BE2B9F589200E6D32E /* SectionList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EE41C2BE2B9F589200E6D32E /* SectionList */ = {
+			isa = PBXGroup;
+			children = (
+				EE41C2BF2B9F58A100E6D32E /* CollectionView */,
+			);
+			path = SectionList;
+			sourceTree = "<group>";
+		};
+		EE41C2BF2B9F58A100E6D32E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EE41C2C02B9F58B300E6D32E /* ListSection.swift */,
+				EE41C2C22B9F58CA00E6D32E /* MovieCollectionLayout.swift */,
+				EE41C2C42B9F58DC00E6D32E /* CollectionDataSource.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE41C2C32B9F58CA00E6D32E /* MovieCollectionLayout.swift in Sources */,
 				EE41C2B22B9F579A00E6D32E /* DataDecoder.swift in Sources */,
 				EE41C2A62B9F56E500E6D32E /* AppDependencies.swift in Sources */,
 				EE41C2A82B9F56FA00E6D32E /* MovieResponseModel.swift in Sources */,
@@ -365,6 +399,8 @@
 				EE41C29F2B9F569300E6D32E /* Loadable.swift in Sources */,
 				EE41C2AB2B9F575300E6D32E /* SectionRepository.swift in Sources */,
 				EE41C2B62B9F57C200E6D32E /* HTTPRequestProtocol.swift in Sources */,
+				EE41C2C52B9F58DC00E6D32E /* CollectionDataSource.swift in Sources */,
+				EE41C2C12B9F58B300E6D32E /* ListSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
